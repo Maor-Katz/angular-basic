@@ -1,0 +1,27 @@
+.example-card{
+    max-width: 250px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.imgCard{
+    height: 150px;
+    width: 100px;
+}
+.deleteIcon{
+    cursor: pointer;
+}
+.finishButton{
+    background-color: dimgray;
+    color: white;
+}

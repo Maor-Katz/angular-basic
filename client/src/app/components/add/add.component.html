@@ -1,0 +1,18 @@
+<div class="myForm">
+    <form [formGroup]="form" (ngSubmit)="addTask()">
+        <mat-form-field appearance="fill">
+            <mat-label>Description Task</mat-label>
+            <textarea matInput formControlName="task_description" mat-matTextareaAutosize="true"></textarea>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Person</mat-label>
+            <mat-select formControlName="person_id">
+                <mat-option *ngFor="let a of persons" [value]="a.id">{{a.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="warn" type="submit" value="add" [disabled]="form.invalid">add</button>
+    </form>
+</div>
